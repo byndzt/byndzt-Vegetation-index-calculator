@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">水稻</string>
+    <string name="Class">班级：</string>
+    <string name="name">SPAD：</string>
+    <string name="number">学号：</string>
+    <string name="add">添加</string>
+    <string name="Class1">   班级</string>
+    <string name="name1">姓名</string>
+    <string name="number1">学号</string>
+</resources>

@@ -1,0 +1,159 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+    <TextView
+        android:background="@drawable/dadou_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/jd_light"
+            android:id="@+id/shengzhangzhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="请选择要计算的植被指数:"
+            android:textSize="20dp" />
+        <Spinner
+            android:layout_marginLeft="20dp"
+            android:id="@+id/spn"
+            android:layout_marginRight="10dp"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:dropDownWidth="200dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/select_image_tishi"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="选择图片以计算该通道灰度值"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textSize="12dp"
+            android:background="@drawable/activity_button2"
+            android:id="@+id/nir_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="选择NIR 图像" />
+
+        <Button
+            android:textSize="12dp"
+            android:background="@drawable/activity_button2"
+            android:id="@+id/red_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="选择red图像" />
+
+        <Button
+            android:textSize="12dp"
+            android:background="@drawable/activity_button2"
+            android:id="@+id/green_open"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="选择green图像" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+    <TextView
+        android:text="获取的NIR通道的灰度值"
+        android:layout_width="260dp"
+        android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/nir"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="获取的RED通道的灰度值"
+            android:layout_width="260dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="获取的GREEN通道的灰度值"
+            android:layout_width="260dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tishi"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/jd_light"
+            android:text="温馨提示：请输入数字范围为[0,255]！"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#313030"
+            android:text="这里显示计算结果："
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/activity_button1"
+            android:text="计算所选植被指数"
+            android:textSize="22dp" />
+
+
+
+
+</LinearLayout>
